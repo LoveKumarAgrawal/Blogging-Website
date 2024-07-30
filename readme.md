@@ -1,6 +1,17 @@
 # Blogging Website
 
-Welcome to my blogging website! This project is built using modern technologies to provide a robust and efficient platform for sharing and reading blog posts. Below you will find details about the tech stack, features, and how to get started.
+Welcome to my blogging website! This project is built using modern technologies to provide a robust and efficient platform for sharing and reading blog posts.
+
+## Deployed Project
+
+You can view the deployed project at: [https://blogging-website-n9vcu3tsp-love-kumar-agrawals-projects.vercel.app/](https://blogging-website-n9vcu3tsp-love-kumar-agrawals-projects.vercel.app/)
+
+## Test Login
+
+For users who do not wish to sign up, you can use the following credentials to log in and test the website:
+
+- **Email:** `testuser@example.com`
+- **Password:** `TestPassword123`
 
 ## Tech Stack
 
@@ -20,17 +31,6 @@ Welcome to my blogging website! This project is built using modern technologies 
 - **Database Management:** Prisma ORM for efficient database management and connection pooling.
 - **Backend Serverless Deployment:** Cloudflare Workers for a fast, scalable backend.
 
-## Deployed Project
-
-You can view the deployed project at: [Deployed Project URL](#)
-
-## Test Login
-
-For users who do not wish to sign up, you can use the following credentials to log in and test the website:
-
-- **Email:** `testuser@example.com`
-- **Password:** `TestPassword123`
-
 ## Getting Started
 
 ### Prerequisites
@@ -38,10 +38,3 @@ For users who do not wish to sign up, you can use the following credentials to l
 - Node.js
 - npm (or yarn)
 - PostgreSQL
-
-### Installation
-
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/LoveKumarAgrawal/Blogging-Website.git
-   cd your-repo
