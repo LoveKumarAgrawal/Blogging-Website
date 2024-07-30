@@ -1,7 +1,7 @@
 import { Hono } from "hono"
 import { PrismaClient } from '@prisma/client/edge'
 import { withAccelerate } from '@prisma/extension-accelerate'
-import { decode, sign, verify } from 'hono/jwt'
+import { sign } from 'hono/jwt'
 import { signupInput, signinInput } from "@lovekumaragrawal/blog-validation"
 
 export const userRouter = new Hono<{
@@ -27,7 +27,8 @@ userRouter.post('/signup', async (c) => {
     const user = await prisma.user.create({
       data: {
         email: body.email,
-        password: body.password
+        password: body.password,
+        name: body.name
       }
     });
     const jwt = await sign({ id: user.id }, c.env.JWT_SECRET);

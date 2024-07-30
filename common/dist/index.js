@@ -7,7 +7,8 @@ exports.updateBlogInput = exports.createBlogInput = exports.signinInput = export
 const zod_1 = __importDefault(require("zod"));
 exports.signupInput = zod_1.default.object({
     email: zod_1.default.string().email(),
-    password: zod_1.default.string().min(6)
+    password: zod_1.default.string().min(6),
+    name: zod_1.default.string().optional()
 });
 exports.signinInput = zod_1.default.object({
     email: zod_1.default.string().email(),
